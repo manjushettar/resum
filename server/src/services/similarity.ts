@@ -6,7 +6,7 @@ export async function calculateSimilarityScore(resumeText: string, jobPostingTex
 
   const similarityScore = cosineSimilarity(resumeEmbedding, jobPostingEmbedding);
 
-  return similarityScore * 100;  // Scale to a percentage
+  return similarityScore * 100; 
 }
 
 function cosineSimilarity(vectorA: number[], vectorB: number[]): number {
