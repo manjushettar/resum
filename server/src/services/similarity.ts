@@ -1,11 +1,9 @@
-import { getOpenAIEmbeddings } from './openai'; // Assume this service handles embedding retrieval
+import { getOpenAIEmbeddings } from './openai';
 
 export async function calculateSimilarityScore(resumeText: string, jobPostingText: string): Promise<number> {
-  // Step 1: Get embeddings for both the resume and job posting
   const resumeEmbedding = await getOpenAIEmbeddings(resumeText);
   const jobPostingEmbedding = await getOpenAIEmbeddings(jobPostingText);
 
-  // Step 2: Calculate the cosine similarity between the two embeddings
   const similarityScore = cosineSimilarity(resumeEmbedding, jobPostingEmbedding);
 
   return similarityScore * 100;  // Scale to a percentage
