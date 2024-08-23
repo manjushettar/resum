@@ -1,0 +1,64 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+.results {
+  margin-top: 30px;
+  text-align: left;
+  word-wrap: break-word; /* Ensures long words are wrapped */
+}
+
+.results pre {
+  color: black;
+  white-space: pre-wrap; /* Preserves formatting while wrapping long lines */
+  word-wrap: break-word; /* Wrap long words within the pre tag */
+  background-color: #f5f5f5; /* Optional: add a light background for readability */
+  padding: 10px; /* Adds padding around the text */
+  overflow: auto; /* Allows scrolling if necessary */
+  border-radius: 4px; /* Optional: slightly rounds the corners of the box */
+}
+
+
+
+.scoreHist div{
+	color: black;
+	background-color: white;
+	margin-bottom:3%;	
+	border-radius: 4px;
+	width: 20%;
+}
