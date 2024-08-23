@@ -9,8 +9,8 @@ import { getOpenAIResponse, getOpenAIEmbeddings } from './services/openai';
 import { calculateSimilarityScore } from './services/similarity';
 const app = express();
 
-app.use(cors());  // Enable CORS for all routes
-app.use(express.json());  // Parse JSON request bodies
+app.use(cors());
+app.use(express.json());
 
 const upload = multer({ storage: multer.memoryStorage() });
 
